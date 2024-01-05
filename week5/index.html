@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reejay's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #3498db;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('https://media1.tenor.com/m/X040Ybh-WyUAAAAd/anita-max-wynn.gif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        section {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #2980b9; 
+            border-bottom: 2px solid #2980b9; 
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #2980b9; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer i {
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer i:hover {
+            color: #e6f7ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>Reejay's Portfolio</h1>
+    </header>
+
+    <div class="profile">
+        <img src="https://static.displate.com/857x1200/displate/2023-06-12/52d5e56e7e92064c138b734245586561_17e601e59e801c83f12f76e16621405d.jpg" alt="Profile Picture">
+        <div class="info">
+            <ul>
+                <li><strong>Nickname:</strong> Jay</li>
+                <li><strong>Age:</strong> 20</li>
+                <li><strong>High School:</strong> Senator Renato Compañero Cayetano Memorial Science and Technology High School, Taguig City</li>
+                <li><strong>Course:</strong> BSCS – SF221</li>
+                <li><strong>Scholarship:</strong> Yes, 50%, Public HS Graduate</li>
+                <li><strong>Transferee / Second course:</strong> No</li>
+            </ul>
+        </div>
+    </div>
+
+    <section>
+        <h2>Motivation and Course Choice</h2>
+        <p>Yes, I chose this course because of my inclination towards computer technology. I believe I have the potential to excel in this industry, and I am eager to learn and contribute to it.</p>
+
+        <h2>I.T. Experience</h2>
+        <p>I have experience with Visual Basic back in my junior high school years.</p>
+
+        <h2>Hobbies / Interests / Libangan</h2>
+        <p>I enjoy playing video games and spend time watching educational content on YouTube to upskill myself. Additionally, I make productive use of my free time by working on self-improvement, including regular gym sessions.</p>
+
+        <h2>Academic Expectations</h2>
+        <p>I expect to gain a comprehensive understanding of web programming and its practical applications. I aim to leverage this knowledge in my future career.</p>
+
+        <h2>Life Goals and Dreams</h2>
+        <p>My goals include personal growth, becoming a better individual, and excelling as a future employee or leader. Achieving financial freedom is also a significant objective.</p>
+        <p>Yes, my dream is to own my dream house and car, signifying a milestone of personal achievement.</p>
+
+        <h2>Additional Insights</h2>
+        <p>Currently, there are no additional aspects of note to share. My focus is on academic and personal development as I embark on this educational journey.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div>
+            <h3>Kindergarten - Elementary</h3>
+            <p>Sto. Niño Catholic School | 2010-2016</p>
+        </div>
+        <div>
+            <h3>High School - Senior High School</h3>
+            <p>Senator Rene Cayetano Science and Technology High School | 2016-2022</p>
+        </div>
+        <div>
+            <h3>College</h3>
+            <p>Asia Pacific College | 2022 - Present</p>
+        </div>
+    </section>
+
+    <button onclick="myFunction()">Hide TMI</button>
+
+    
+    <script>
+        function myFunction() {
+            var x = document.querySelectorAll("section");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+<footer>
+    <p>Find me on social media.</p>
+    <a href="https://www.facebook.com/reejaysalinas26/" target="_blank">
+        <i class="fa fa-facebook-official"></i>
+    </a>
+    <a href="https://www.instagram.com/_datboii.reej/?hl=en" target="_blank">
+        <i class="fa fa-instagram"></i>
+    </a>
+</footer>
+
