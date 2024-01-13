@@ -256,6 +256,8 @@
 
 
 
+
+
 <footer>
     <p id="socialMediaText">Find me on social media.</p>
     <a href="https://www.facebook.com/reejaysalinas26/" target="_blank">
@@ -280,6 +282,22 @@
         }
         typeWriter();
     </script>
+    
+    
+    <script>
+    var footer = document.querySelector("footer");
+    var footerColors = ["#FF5733", "#3498db", "#2ecc71", "#e74c3c", "#f39c12"];
+
+    footer.addEventListener("mouseenter", function () {
+        var randomColor = footerColors[Math.floor(Math.random() * footerColors.length)];
+        this.style.transition = "background-color 0.5s ease";
+        this.style.backgroundColor = randomColor;
+    });
+
+    footer.addEventListener("mouseleave", function () {
+        this.style.backgroundColor = "";
+    });
+</script>
 </footer>
 
 
