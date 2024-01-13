@@ -22,7 +22,7 @@
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #FDCDCD;
             padding: 15px;
             text-align: center;
         }
@@ -239,7 +239,20 @@
 
 <button onclick="toggleSections()">>.<</button>
 
+<script>
+    var header = document.querySelector("header");
+    var headerColors = ["#FF5733", "#3498db", "#2ecc71", "#e74c3c", "#f39c12"];
 
+    header.addEventListener("mouseenter", function () {
+        var randomColor = headerColors[Math.floor(Math.random() * headerColors.length)];
+        this.style.transition = "background-color 0.5s ease";
+        this.style.backgroundColor = randomColor;
+    });
+
+    header.addEventListener("mouseleave", function () {
+        this.style.backgroundColor = "";
+    });
+</script>
 
 
 
