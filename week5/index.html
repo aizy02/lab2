@@ -182,7 +182,15 @@
     header.style.backgroundColor = "#FDCDCD";
 </script>
 
+<script>
+    // Custom Fancy Feature
+    var profileImage = document.querySelector(".profile img");
 
+    profileImage.addEventListener("click", function () {
+        this.style.transition = "transform 0.5s ease";
+        this.style.transform = "rotate(360deg)";
+    });
+</script>
 
 <script>
     var profileImage = document.querySelector(".profile img");
@@ -214,14 +222,34 @@
 
 <button onclick="toggleSections()">>.<</button>
 
-</body>
+
+
+
+
 <footer>
-    <p>Find me on social media.</p>
+    <p id="socialMediaText">Find me on social media.</p>
     <a href="https://www.facebook.com/reejaysalinas26/" target="_blank">
         <i class="fa fa-facebook-official"></i>
     </a>
     <a href="https://www.instagram.com/_datboii.reej/?hl=en" target="_blank">
         <i class="fa fa-instagram"></i>
     </a>
+    
+    <script>
+        var socialMediaText = "Find me on social media.";
+        var index = 0;
+
+        document.getElementById("socialMediaText").innerHTML = "";
+
+        function typeWriter() {
+            if (index < socialMediaText.length) {
+                document.getElementById("socialMediaText").innerHTML += socialMediaText.charAt(index);
+                index++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+        typeWriter();
+    </script>
 </footer>
+
 
