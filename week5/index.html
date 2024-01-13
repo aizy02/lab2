@@ -185,6 +185,18 @@
     header.style.backgroundColor = "#FDCDCD";
 </script>
 
+<script>
+    var profileImage = document.querySelector(".profile img");
+    profileImage.addEventListener("mouseover", function () {
+        this.style.transform = "scale(1.1)";
+        this.style.transition = "transform 0.5s ease";
+    });
+
+    profileImage.addEventListener("mouseout", function () {
+        this.style.transform = "scale(1)";
+    });
+</script>
+
 <footer>
     <p>Find me on social media.</p>
     <a href="https://www.facebook.com/reejaysalinas26/" target="_blank">
