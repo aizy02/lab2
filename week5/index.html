@@ -113,9 +113,26 @@
 <body>
 
     
-    <header>
-        <h1>Reejay's Portfolio</h1>
-    </header>
+   <header>
+    <h1 id="portfolioTitle">Reejay's Portfolio</h1>
+</header>
+
+<script>
+    var portfolioTitle = "Reejay's Portfolio";
+    var titleIndex = 0;
+
+    document.getElementById("portfolioTitle").innerHTML = "";
+
+    function typeWriterTitle() {
+        if (titleIndex < portfolioTitle.length) {
+            document.getElementById("portfolioTitle").innerHTML += portfolioTitle.charAt(titleIndex);
+            titleIndex++;
+            setTimeout(typeWriterTitle, 50);
+        }
+    }
+
+    typeWriterTitle();
+</script>
 
     <div class="profile">
         <img src="https://static.displate.com/857x1200/displate/2023-06-12/52d5e56e7e92064c138b734245586561_17e601e59e801c83f12f76e16621405d.jpg" alt="Profile Picture">
