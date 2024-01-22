@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script>
+        var profileModule = (function () {
+            function displayDetails() {
+                var detailsContainer = document.querySelector(".info ul");
+                for (var key in personalDetails) {
+                    var listItem = document.createElement("li");
+                    listItem.innerHTML = "<strong>" + key.charAt(0).toUpperCase() + key.slice(1) + ":</strong> " + personalDetails[key];
+                    detailsContainer.appendChild(listItem);
+                }
+            }
 
+            return {
+                displayDetails: displayDetails
+            };
+        })();
+
+        profileModule.displayDetails();
+    </script>
+    
 <script>
         async function fetchAdditionalInsights() {
             return new Promise((resolve) => {
