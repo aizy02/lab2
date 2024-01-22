@@ -22,7 +22,34 @@
 
         updateAdditionalInsights();
     </script>
+    
+ <script>
+        class ProfileAnimator {
+            constructor(element) {
+                this.element = element;
+                this.setupListeners();
+            }
 
+            setupListeners() {
+                this.element.addEventListener("click", () => {
+                    this.element.style.transition = "transform 0.5s ease";
+                    this.element.style.transform = "rotate(360deg)";
+                });
+
+                this.element.addEventListener("mouseover", () => {
+                    this.element.style.transform = "scale(1.1)";
+                    this.element.style.transition = "transform 0.5s ease";
+                });
+
+                this.element.addEventListener("mouseout", () => {
+                    this.element.style.transform = "scale(1)";
+                });
+            }
+        }
+
+        var profileImage = document.querySelector(".profile img");
+        var animator = new ProfileAnimator(profileImage);
+    </script>
 
 <head>
     <meta charset="UTF-8">
