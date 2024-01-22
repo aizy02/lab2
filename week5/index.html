@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<script>
+        async function fetchAdditionalInsights() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Currently, there are no additional aspects of note to share. My focus is on academic and personal development as I embark on this educational journey.");
+                }, 1000);
+            });
+        }
+
+        async function updateAdditionalInsights() {
+            var additionalInsightsSection = document.querySelectorAll("section")[1];
+            var additionalInsights = await fetchAdditionalInsights();
+
+            var insightsParagraph = document.createElement("p");
+            insightsParagraph.textContent = additionalInsights;
+            additionalInsightsSection.appendChild(insightsParagraph);
+        }
+
+        updateAdditionalInsights();
+    </script>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -307,6 +330,7 @@
         });
     });
 </script>
+
 
 
     
