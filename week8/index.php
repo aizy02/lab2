@@ -11,6 +11,10 @@ $scholarship = "Yes, 50%, Public HS Graduate";
 $transferee = "No";
 ?>
 
+
+
+
+
 <script>
         var profileModule = (function () {
             function displayDetails() {
@@ -309,10 +313,15 @@ $transferee = "No";
             }
         }
     }
-
+    
+<?php
+$showSections = true; 
+?>
     var hideButton = document.querySelector("button");
 
     hideButton.addEventListener("click", toggleSections);
+        <?php echo $showSections ? 'toggleSections()' : ''; ?>
+    });
 </script>
 
 <button onclick="toggleSections()">>.<</button>
