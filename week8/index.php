@@ -23,6 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+
+
+
 <script>
         var profileModule = (function () {
             function displayDetails() {
@@ -423,4 +426,22 @@ $showSections = true;
 </script>
 </footer>
 
+
+<?php
+$feedback = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $feedback = $_POST["feedback"];
+}
+?>
+
+<section>
+    <h2>Feedback</h2>
+    <form method="post">
+        <label for="feedback">Share your thoughts:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
 
