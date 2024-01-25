@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<?php
+$nickname = "Jay";
+$age = 20;
+$highSchool = "Senator Renato Compañero Cayetano Memorial Science and Technology High School, Taguig City";
+$course = "BSCS – SF221";
+$scholarship = "Yes, 50%, Public HS Graduate";
+$transferee = "No";
+?>
+
 <script>
         var profileModule = (function () {
             function displayDetails() {
