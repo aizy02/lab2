@@ -12,8 +12,16 @@ $transferee = "No";
 ?>
 
 
+<?php
+$feedback = "";
 
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $rawFeedback = $_POST["feedback"];
+    // Use a simple regex to allow only letters, numbers, and basic punctuation
+    $validatedFeedback = preg_replace("/[^a-zA-Z0-9,.!? ]/", "", $rawFeedback);
+    $feedback = htmlspecialchars($validatedFeedback);
+}
+?>
 
 <script>
         var profileModule = (function () {
