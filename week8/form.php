@@ -2,15 +2,9 @@
 <html>
 <head>
 <style>
-  body {
-    background-image: url('C:\xampp\htdocs\webprog\lab2\week8\bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .error {
-    color: #FF0000;
-  }
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 </style>
 </head>
 <body>  
