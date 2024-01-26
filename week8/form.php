@@ -1,11 +1,7 @@
 <!DOCTYPE HTML> 
 <html>
 <head>
-<style>
-<head>
   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-</style>
 </head>
 <body>  
 <?php
