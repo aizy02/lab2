@@ -1,12 +1,19 @@
-<!DOCTYPE HTML>  
+<!DOCTYPE HTML> 
 <html>
 <head>
 <style>
-.error {color: #FF0000;}
+  body {
+    background-image: url('C:\xampp\htdocs\webprog\lab2\week8\bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .error {
+    color: #FF0000;
+  }
 </style>
 </head>
 <body>  
-
 <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
